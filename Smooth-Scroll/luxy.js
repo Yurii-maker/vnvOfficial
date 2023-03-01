@@ -1,20 +1,3 @@
-/*!
- * luxy.js v0.1.0: Inertia scroll and parallax effect plugin in Vanilla.js
- * (c) 2018 Mineo Okuda
- * MIT License
- * git+ssh://git@github.com:min30327/luxy.js.git
- */
-
-/**
- * Written by Mineo Okuda on 01/03/18.
- *
- * Mineo Okuda - development + design
- * https://willstyle.co.jp
- * https://github.com/min30327
- *
- * MIT license.
- */
-
 (function(root, factory) {
 	'use strict';
 

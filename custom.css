@@ -1,0 +1,34 @@
+.iconsBlock {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+    row-gap: 70px;
+    justify-content: center;
+}
+
+.iconsHeader {
+    color: white;
+    width: 90%;
+    text-align: center;
+}
+
+.iconsWrap {
+    display: flex;
+    gap:20%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 80%;
+    row-gap: 80px;
+}
+
+.icon {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.icon:hover {
+    scale: 1.5;
+    transition: 1s;
+}
+
