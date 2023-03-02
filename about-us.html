@@ -236,7 +236,7 @@
                                                         <div class="new-div-2 menu"></div>
                                                     </div>
                                                 </div>
-                                               </div>
+                                            </div>
                                         </div>
                                         <div class="c-nav-social-media">
                                             <div class="nav-social-address head">Social</div>
@@ -345,7 +345,6 @@
                  data-autoplay="true" data-loop="true" data-wf-ignore="true"
                  class="image-3 w-background-video w-background-video-atom">
                 <video autoplay="" loop=""
-                       style="background-image:url(&quot;600e79d42eab063f0504b711/602bceec2dfecf326188892f_SVE_AI_visual_by_gleb-poster-00001.jpg&quot;)"
                        muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
                     <source src="600e79d42eab063f0504b711/602bceec2dfecf326188892f_SVE_AI_visual_by_gleb-transcode.mp4"
                             data-wf-ignore="true">
@@ -511,7 +510,7 @@
                     </div>
                 </div>
                 <div class="text-block-11">Karla Miklʹosha Street, 7<br>Lviv, Ukraine</div>
-                </div>
+            </div>
             <div class="socials-footer">
                 <div class="w-layout-grid grid-3"><a data-w-id="0471806d-ee39-1152-31e3-9e4b589cf7fe"
                                                      href="https://www.facebook.com/profile.php?id=100088433736254"
@@ -776,7 +775,7 @@
     });
 
     // Play animation when scrolled into view
-    $('.#heading-container').on('inview', function (event, isInView) {
+    $('#heading-container').on('inview', function (event, isInView) {
         if (isInView) {
             // Put the play below this line
         } else {
@@ -898,7 +897,6 @@
                     ++this.zIndexVal;
                     this.imgPosition = this.imgPosition < this.imagesTotal - 1 ? this.imgPosition + 1 : 0;
 
-                    lastMousePos = mousePos;
                 }
 
                 // check when mousemove stops and all images are inactive (not visible and not animating)
