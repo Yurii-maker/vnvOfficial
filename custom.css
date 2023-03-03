@@ -15,7 +15,7 @@
 
 .iconsWrap {
     display: flex;
-    gap:20%;
+    gap: 20%;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 80%;
@@ -32,3 +32,6 @@
     transition: 1s;
 }
 
+.fontTricks {
+    font-size: 200px;
+}
