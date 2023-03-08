@@ -1,0 +1,63 @@
+version: '3'
+
+services:
+#  back:
+#    container_name: backend
+#    build:
+#      context: ./backend
+#      dockerfile: ../docker/backend/Dockerfile
+##    env_file:
+##      - .env
+#    volumes:
+#      - ./backend:/app
+#    expose:
+#      - 8080
+#    networks:
+#      - app
+#    depends_on:
+#      - db
+#    links:
+#      - db
+
+#  db:
+#    image: mysql:8.0.29
+#    ports:
+#      - '3303:3306'
+#    environment:
+#      MYSQL_DATABASE: ''
+#      MYSQL_ROOT: 'root'
+#      MYSQL_ROOT_PASSWORD: 'root'
+#    restart: always
+#    networks:
+#      - app
+
+  front:
+    container_name: frontend
+    build:
+      context: ./
+      dockerfile: ./docker/frontend/Dockerfile
+
+#    env_file:
+#      - .env
+    networks:
+      - app
+    ports:
+      - 3000:3000
+
+  nginx:
+    container_name: "nginx"
+    image: nginx:alpine
+    volumes:
+      - .:/var/www/html
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 1442:80
+    depends_on:
+#      - back
+      - front
+    networks:
+      - app
+
+networks:
+  app:
+    driver: bridge
